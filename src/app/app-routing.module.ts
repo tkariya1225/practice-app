@@ -5,8 +5,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 
 const routes: Routes = [
-  { path: '', component: TopBarComponent },
-  { path: '', component: ProductListComponent  }
+  //{ path: '', component: TopBarComponent },
+  { path: '', component: ProductListComponent  },
 ];
 
 @NgModule({
