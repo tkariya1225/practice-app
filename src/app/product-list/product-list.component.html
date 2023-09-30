@@ -1,1 +1,5 @@
-<h2>Products</h2>
+<div *ngFor="let product of products">
+    <h1>{{ product.name }}</h1>
+    <h2>在庫 : {{ product.stock }}</h2>
+    <p *ngIf="product.description">{{ product.description }}</p>
+</div>
