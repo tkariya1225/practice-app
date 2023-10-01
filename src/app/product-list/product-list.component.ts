@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { products } from '../products';
+import { Product, products } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -8,25 +8,14 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent {
-  /*
-  products = [...products];
-  */
 
-  products = [
-    {
-      name: "iPhone",
-      stock: 30,
-      description: "サンプルテキスト"
-    },
-    {
-      name: "iPad",
-      stock: 12,
-      description: "タブレットです。"
-    },
-  ]
+  products:Product[] = [...products];
 
   share() {
     window.alert('The product has been shared!');
   }
 
+  notify() {
+    window.alert('この商品を入荷したら通知します!');
+  }
 }
